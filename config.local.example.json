@@ -1,0 +1,17 @@
+{
+	"_comment": "Copy to config.local.json and adjust. config.local.json is gitignored — it may hold machine-specific lanes and key material. Keys: leave apiKey null to forward the client's own auth headers (chained lanes like bili MITM); set apiKeyEnv to read one from the environment.",
+	"enabled": true,
+	"host": "127.0.0.1",
+	"port": 8787,
+	"tokenBudget": 128000,
+	"trimToTokens": null,
+	"modelContextWindow": 1000000,
+	"upstream": {
+		"baseUrl": "http://127.0.0.1:8790/bili/https://api.deepseek.com/anthropic",
+		"apiKey": null,
+		"apiKeyEnv": null
+	},
+	"rolloutDir": "~/.zcode/cli/rollout",
+	"stateDir": "state",
+	"logDir": "logs"
+}

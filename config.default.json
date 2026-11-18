@@ -1,0 +1,16 @@
+{
+	"enabled": true,
+	"host": "127.0.0.1",
+	"port": 8787,
+	"tokenBudget": 128000,
+	"trimToTokens": null,
+	"modelContextWindow": null,
+	"upstream": {
+		"baseUrl": "http://127.0.0.1:8788",
+		"apiKey": null,
+		"apiKeyEnv": "ZCP_UPSTREAM_API_KEY"
+	},
+	"rolloutDir": "~/.zcode/cli/rollout",
+	"stateDir": "state",
+	"logDir": "logs"
+}

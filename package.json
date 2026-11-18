@@ -1,0 +1,17 @@
+{
+  "name": "zcode-context-paging",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Bounded rolling context and exact history recovery for ZCode — proxy lane port of @rochecompaan/pi-context-paging semantics. Nothing is installed or wired into ZCode until you activate it.",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "bin": { "zcp": "./bin/zcp.mjs" },
+  "scripts": {
+    "serve": "node bin/zcp.mjs serve",
+    "mcp": "node bin/zcp.mjs mcp",
+    "replay": "node scripts/replay.mjs",
+    "monitor": "node bin/zcp.mjs monitor",
+    "test": "node test/run-tests.mjs"
+  }
+}

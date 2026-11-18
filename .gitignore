@@ -1,0 +1,7 @@
+state/
+logs/
+*.log
+node_modules/
+config.local.json
+*.bak-*
+gui-check.js
